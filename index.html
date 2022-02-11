@@ -1,0 +1,892 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="assets/logo.svg">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
+    
+    
+      
+        <title>Project Name</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.d6be258b.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#code-blocks" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Project Name" class="md-header__button md-logo" aria-label="Project Name" data-md-component="logo">
+      
+  <img src="assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Project Name
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg viewBox="0 0 154 79" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M114.5 2h-75C18.79 2 2 18.79 2 39.5S18.79 77 39.5 77h75c20.711 0 37.5-16.79 37.5-37.5S135.211 2 114.5 2Z" fill="#fff" stroke="#333" stroke-width="4"/><path d="M37 64c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24Zm81.678-24.893A16.62 16.62 0 0 1 115.076 21a18.36 18.36 0 0 0-9.453 5.05c-7.21 7.21-7.21 18.9 0 26.11 7.212 7.211 18.9 7.21 26.111 0a18.356 18.356 0 0 0 5.05-9.451 16.624 16.624 0 0 1-18.106-3.602Z" fill="#333"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg viewBox="0 0 154 79" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39.5 4h75V0h-75v4Zm75 0C134.106 4 150 19.894 150 39.5h4C154 17.685 136.315 0 114.5 0v4ZM150 39.5c0 19.606-15.894 35.5-35.5 35.5v4c21.815 0 39.5-17.685 39.5-39.5h-4ZM114.5 75h-75v4h75v-4Zm-75 0C19.894 75 4 59.106 4 39.5H0C0 61.315 17.685 79 39.5 79v-4ZM4 39.5C4 19.894 19.894 4 39.5 4V0C17.685 0 0 17.685 0 39.5h4Z" fill="#F5F5F5" fill-opacity=".9"/><path d="M117 63c13.255 0 24-10.745 24-24s-10.745-24-24-24-24 10.745-24 24 10.745 24 24 24ZM26.349 39.5a9.166 9.166 0 0 0 9.155 9.155 9.166 9.166 0 0 0 9.154-9.155 9.166 9.166 0 0 0-9.154-9.155 9.166 9.166 0 0 0-9.155 9.155Zm7.323 12.799h3.656v5.485h-3.656v-5.485Zm0-31.083h3.656v5.485h-3.656v-5.485ZM17.216 37.672h5.485v3.656h-5.485v-3.656Zm31.083 0h5.485v3.656h-5.485v-3.656Zm-24.433 16.05-2.585-2.586 3.878-3.878 2.585 2.585-3.878 3.878Zm19.39-24.563 3.88-3.88 2.585 2.585-3.88 3.88-2.585-2.585Zm-18.097 2.587-3.878-3.88 2.587-2.585 3.876 3.88-2.585 2.585Zm24.562 19.39-2.585 2.585-3.88-3.88 2.585-2.585 3.88 3.88Z" fill="#F5F5F5"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/user/project/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Project Name" class="md-nav__button md-logo" aria-label="Project Name" data-md-component="logo">
+      
+  <img src="assets/logo.svg" alt="logo">
+
+    </a>
+    Project Name
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/user/project/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-annotations" class="md-nav__link">
+    Code annotations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-title" class="md-nav__link">
+    Adding a title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-annotations" class="md-nav__link">
+    Adding annotations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-line-numbers" class="md-nav__link">
+    Adding line numbers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlighting-specific-lines" class="md-nav__link">
+    Highlighting specific lines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlighting-inline-code-blocks" class="md-nav__link">
+    Highlighting inline code blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embedding-external-files" class="md-nav__link">
+    Embedding external files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="browser-support/" class="md-nav__link">
+        Browser support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="customization/" class="md-nav__link">
+        Customization
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fake.md" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fake.md" class="md-nav__link">
+        Creating your site
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fake.md" class="md-nav__link">
+        Publishing your site
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fake.md" class="md-nav__link">
+        Alternatives
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Changelog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Changelog" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Changelog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="changelog/fake.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fake.md" class="md-nav__link">
+        How to upgrade
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-annotations" class="md-nav__link">
+    Code annotations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-title" class="md-nav__link">
+    Adding a title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-annotations" class="md-nav__link">
+    Adding annotations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-line-numbers" class="md-nav__link">
+    Adding line numbers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlighting-specific-lines" class="md-nav__link">
+    Highlighting specific lines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlighting-inline-code-blocks" class="md-nav__link">
+    Highlighting inline code blocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embedding-external-files" class="md-nav__link">
+    Embedding external files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/user/project/edit/master/docs/README.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+<h1>Some example pages...</h1>
+
+<ul>
+<li>
+<p><em>For MkDocs <strong>Material</strong> full documentation visit <a href="https://squidfunk.github.io/mkdocs-material">squidfunk.github.io/mkdocs-material</a>.</em></p>
+</li>
+<li>
+<p><em>For MkDocs full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</em></p>
+</li>
+</ul>
+<hr />
+<h1 id="code-blocks">Code blocks</h1>
+<p>Code blocks and examples are an essential part of technical project
+documentation. Material for MkDocs provides different ways to set up syntax
+highlighting for code blocks, either during build time using <a href="https://pygments.org">Pygments</a> or
+during runtime using a JavaScript syntax highlighter.</p>
+<h2 id="configuration">Configuration</h2>
+<p>This configuration enables syntax highlighting on code blocks and inline code
+blocks, and allows to include source code directly from other files. Add the
+following lines to <code>mkdocs.yml</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.highlight</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">      </span><span class="nt">anchor_linenums</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span><span class="w"></span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.snippets</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span><span class="w"></span>
+</code></pre></div>
+<p>The following sections discuss how to use different syntax highlighting features
+with <a href="https://pygments.org">Pygments</a>, the recommended highlighter, so they don't apply when using a
+JavaScript syntax highlighter.</p>
+<p>See additional configuration options:</p>
+<ul>
+<li><a href="../setup/extensions/python-markdown-extensions.md#highlight">Highlight</a></li>
+<li><a href="../setup/extensions/python-markdown-extensions.md#inlinehilite">InlineHilite</a></li>
+<li><a href="../setup/extensions/python-markdown-extensions.md#superfences">SuperFences</a></li>
+<li><a href="../setup/extensions/python-markdown-extensions.md#snippets">Snippets</a></li>
+</ul>
+<h3 id="code-annotations">Code annotations</h3>
+<p><a href="https://github.com/squidfunk/mkdocs-material/releases/tag/8.0.0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> 8.0.0</a> ·
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7.5 7.25C7.5 4.58 9.422 2.5 12 2.5c2.079 0 3.71 1.34 4.282 3.242a.75.75 0 1 0 1.436-.432C16.971 2.825 14.792 1 12 1 8.503 1 6 3.845 6 7.25V9h-.5A2.5 2.5 0 0 0 3 11.5v8A2.5 2.5 0 0 0 5.5 22h13a2.5 2.5 0 0 0 2.5-2.5v-8A2.5 2.5 0 0 0 18.5 9h-11V7.25zm-3 4.25a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-8z"/></svg></span> Feature flag ·
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8 8.807V3.5h-.563a.75.75 0 0 1 0-1.5h9.125a.75.75 0 0 1 0 1.5H16v5.307l5.125 9.301c.964 1.75-.302 3.892-2.299 3.892H5.174c-1.998 0-3.263-2.142-2.3-3.892L8 8.807zM14.5 3.5h-5V9a.75.75 0 0 1-.093.362L7.127 13.5h9.746l-2.28-4.138A.75.75 0 0 1 14.5 9V3.5zM4.189 18.832 6.3 15h11.4l2.111 3.832a1.125 1.125 0 0 1-.985 1.668H5.174a1.125 1.125 0 0 1-.985-1.668z"/></svg></span> Experimental</p>
+<p>Code annotations offer a comfortable and friendly way to attach arbitrary
+content to specific sections of code blocks by adding numeric markers in block
+and inline comments in the language of the code block. Add the following to
+<code>mkdocs.yml</code> to enable them globally:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span><span class="w"> </span><span class="c1"># (1)</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li><img alt="🙋‍♂️" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> I'm a code annotation! I can contain <code>code</code>, <strong>formatted
+    text</strong>, images, ... basically anything that can be written in Markdown.</li>
+</ol>
+<details class="info">
+<summary>Enabling code annotations for a specific code block</summary>
+<p>If you don't want to enable code annotations globally, because you don't
+like the automatic inlining behavior, you can enable them for a specific
+code block by using a slightly different syntax based on the
+<a href="../setup/extensions/python-markdown.md#attribute-lists">Attribute Lists</a> extension:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="err">```</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="w"> </span><span class="nv">.yaml .annotate</span><span class="w"> </span><span class="p p-Indicator">}</span><span class="w"></span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># Code block content</span><span class="w"></span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="err">```</span><span class="w"></span>
+</code></pre></div>
+<p>Note that the language shortcode which has to come first must now also be
+prefixed by a <code>.</code>.</p>
+</details>
+<h2 id="usage">Usage</h2>
+<p>Code blocks must be enclosed with two separate lines containing three backticks.
+To add syntax highlighting to those blocks, add the language shortcode directly
+after the opening block. See the <a href="https://pygments.org/docs/lexers/">list of available lexers</a> to find the
+shortcode for a given language:</p>
+<div class="highlight"><span class="filename">Code block</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="sb">```py</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="sb">```</span>
+</code></pre></div>
+<div class="result">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+</code></pre></div>
+</div>
+<h3 id="adding-a-title">Adding a title</h3>
+<p><a href="https://github.com/squidfunk/mkdocs-material/releases/tag/7.3.6"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> 7.3.6</a> ·
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8 8.807V3.5h-.563a.75.75 0 0 1 0-1.5h9.125a.75.75 0 0 1 0 1.5H16v5.307l5.125 9.301c.964 1.75-.302 3.892-2.299 3.892H5.174c-1.998 0-3.263-2.142-2.3-3.892L8 8.807zM14.5 3.5h-5V9a.75.75 0 0 1-.093.362L7.127 13.5h9.746l-2.28-4.138A.75.75 0 0 1 14.5 9V3.5zM4.189 18.832 6.3 15h11.4l2.111 3.832a1.125 1.125 0 0 1-.985 1.668H5.174a1.125 1.125 0 0 1-.985-1.668z"/></svg></span> Experimental</p>
+<p>In order to provide additional context, a custom title can be added to a code
+block by using the <code>title="&lt;custom title&gt;"</code> option directly after the shortcode,
+e.g. to display the name of a file:</p>
+<div class="highlight"><span class="filename">Code block with title</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>```py title=&quot;bubble_sort.py&quot;
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>def bubble_sort(items):
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    for i in range(len(items)):
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>        for j in range(len(items) - 1 - i):
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>            if items[j] &gt; items[j + 1]:
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>                items[j], items[j + 1] = items[j + 1], items[j]
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>```
+</code></pre></div>
+<div class="result">
+<div class="highlight"><span class="filename">bubble_sort.py</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</code></pre></div>
+</div>
+<h3 id="adding-annotations">Adding annotations</h3>
+<p>Code annotations can be placed anywhere in a code block where a comment for the
+language of the block can be placed, e.g. for JavaScript in <code class="highlight"><span class="c1">// ...</span></code> and
+<code class="highlight"><span class="cm">/* ... */</span></code>, for YAML in <code class="highlight"><span class="c1"># ...</span><span class="w"></span></code>, etc.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
+<div class="highlight"><span class="filename">Code block with annotation</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="sb">```yaml</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span><span class="w"> </span><span class="c1"># (1)</span><span class="w"></span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="sb">```</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="k">1.</span>  :man_raising_hand: I&#39;m a code annotation! I can contain <span class="sb">`code`</span>, **formatted
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    text**, images, ... basically anything that can be written in Markdown.
+</code></pre></div>
+<div class="result">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span><span class="w"> </span><span class="c1"># (1)</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li><img alt="🙋‍♂️" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> I'm a code annotation! I can contain <code>code</code>, <strong>formatted
+    text</strong>, images, ... basically anything that can be written in Markdown.</li>
+</ol>
+</div>
+<h3 id="adding-line-numbers">Adding line numbers</h3>
+<p>Line numbers can be added to a code block by using the <code>linenums="&lt;start&gt;"</code>
+option directly after the shortcode, whereas <code>&lt;start&gt;</code> represents the starting
+line number. A code block can start from a line number other than <code>1</code>, which
+allows to split large code blocks for readability:</p>
+<div class="highlight"><span class="filename">Code block with line numbers</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>```py linenums=&quot;1&quot;
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>def bubble_sort(items):
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    for i in range(len(items)):
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        for j in range(len(items) - 1 - i):
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>            if items[j] &gt; items[j + 1]:
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>                items[j], items[j + 1] = items[j + 1], items[j]
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>```
+</code></pre></div>
+<div class="result">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<h3 id="highlighting-specific-lines">Highlighting specific lines</h3>
+<p>Specific lines can be highlighted by passing the line numbers to the <code>hl_lines</code>
+argument placed right after the language shortcode. Note that line counts start
+at <code>1</code>, regardless of the starting line number specified as part of
+<a href="#adding-line-numbers"><code>linenums</code></a>:</p>
+<div class="highlight"><span class="filename">Code block with highlighted lines</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>```py hl_lines=&quot;2 3&quot;
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>def bubble_sort(items):
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    for i in range(len(items)):
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>        for j in range(len(items) - 1 - i):
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>            if items[j] &gt; items[j + 1]:
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>                items[j], items[j + 1] = items[j + 1], items[j]
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>```
+</code></pre></div>
+<div class="result">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span>
+<span class="normal"><a href="#__codelineno-12-5">5</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+</span><a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="hll">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+</span><a id="__codelineno-12-4" name="__codelineno-12-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<h3 id="highlighting-inline-code-blocks">Highlighting inline code blocks</h3>
+<p>When <a href="../setup/extensions/python-markdown-extensions.md#inlinehilite">InlineHilite</a> is enabled, syntax highlighting can be applied to inline
+code blocks by prefixing them with a shebang, i.e. <code>#!</code>, directly followed by
+the corresponding <a href="https://pygments.org/docs/lexers/">language shortcode</a>.</p>
+<div class="highlight"><span class="filename">Inline code block</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>The <span class="sb">`#!python range()`</span> function is used to generate a sequence of numbers.
+</code></pre></div>
+<p>The <code class="highlight"><span class="nb">range</span><span class="p">()</span></code> function is used to generate a sequence of numbers.</p>
+<h3 id="embedding-external-files">Embedding external files</h3>
+<p>When <a href="../setup/extensions/python-markdown-extensions.md#snippets">Snippets</a> is enabled, content from other files (including source files)
+can be embedded by using the <a href="https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation"><code>--8&lt;--</code> notation</a> directly
+from within a code block:</p>
+<div class="highlight"><span class="filename">Code block with external content</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>```title=&quot;.browserslistrc&quot;
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>--8&lt;--​ &quot;.browserslistrc&quot;
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>```
+</code></pre></div>
+<div class="result">
+<div class="highlight"><span class="filename">.browserslistrc</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>last 4 years
+</code></pre></div>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Code annotations require syntax highlighting with <a href="https://pygments.org">Pygments</a> – they're
+currently not compatible with JavaScript syntax highlighters, or languages
+that do not have comments in their grammar. However, we're actively working
+on supporting alternate ways of defining code annotations, allowing to
+always place code annotations at the end of lines.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+      
+        
+        <a href="browser-support/" class="md-footer__link md-footer__link--next" aria-label="Next: Browser support" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Browser support
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.092fa1f6.min.js"}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e3b2bf44.min.js"></script>
+      
+    
+  </body>
+</html>
