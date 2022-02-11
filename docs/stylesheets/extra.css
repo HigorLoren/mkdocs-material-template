@@ -1,0 +1,101 @@
+:root>* {
+  --md-primary-fg-color: transparent;
+  --md-primary-bg-color: black;
+  --md-typeset-a-color: #1665c0;
+  --md-pre-code-bg-color: rgba(110, 118, 129, 0.08);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 212;
+  --md-primary-bg-color: #c9d1d9;
+  --md-default-bg-color: #0d1117;
+  --md-typeset-a-color: #58a6ff;
+  --md-default-fg-color--light: hsla(var(--md-hue),50%);
+  --md-code-fg-color: #c9d1d9;
+  --md-code-bg-color: rgba(110, 118, 129, 0.4);
+  --md-pre-code-bg-color: rgba(110, 118, 129, 0.2);
+}
+
+.md-header {
+  margin: 1.8rem 0 .7rem 0;
+}
+
+[dir=ltr] .md-header__title {
+  margin-left: 0;
+}
+
+.md-header[data-md-state="shadow"] {
+  --md-primary-fg-color: #fff;
+}
+
+[data-md-color-scheme="slate"] .md-header[data-md-state="shadow"] {
+  box-shadow: none;
+  --md-primary-fg-color: #12161d;
+}
+
+[data-md-component="palette"] {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-nav__source {
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .md-search__form {
+    background-color: rgba(0, 0, 0, .09);
+    color: black;
+  }
+  .md-search__form:hover {
+    background-color: rgba(0, 0, 0, .11);
+  }
+  .md-search__input+.md-search__icon,
+  .md-search__form input::placeholder {
+    color: rgba(0, 0, 0, 0.378);
+  }
+
+  [data-md-color-scheme="slate"] .md-search__form {
+    background-color: rgba(255, 255, 255, 0.09);
+    color: #fff;
+  }
+  [data-md-color-scheme="slate"] .md-search__form:hover {
+    background-color: rgba(255, 255, 255, 0.11);
+  }
+  [data-md-color-scheme="slate"] .md-search__input+.md-search__icon,
+  [data-md-color-scheme="slate"] .md-search__form input::placeholder {
+    color: rgba(255, 255, 255, 0.378);
+  }
+}
+
+.md-typeset code {
+  padding: 0.18em 0.38em;
+  margin: 0;
+  border-radius: 4px;
+  font-size: 85%;
+  box-sizing: border-box;
+  display: inline;
+  height: auto;
+  line-height: 20.4px;
+  overflow-wrap: break-word;
+  text-size-adjust: 100%;
+  width: auto;
+}
+
+.md-typeset pre>code {
+  background: var(--md-pre-code-bg-color);
+}
+
+.md-header__option .md-header__button.md-icon svg {
+  width: 2rem;
+  fill: currentcolor;
+}
+
+.md-header__option .md-header__button.md-icon:hover {
+  opacity: .9;
+}
+
+.md-header__option .md-header__button.md-icon svg {
+  fill: unset;
+}
